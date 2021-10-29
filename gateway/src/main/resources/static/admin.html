@@ -5,11 +5,94 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>weCare</title>
 </head>
-<body onload="CreateTableFromJSON()">
+
+<style>
+    h1{
+        color: #999;
+        padding: 20px;
+    }
+    h3{
+        padding: 15px;
+    }
+    .table-box{
+        padding: auto;
+    }
+</style>
+
+<body>
     <h1>weCare</h1>
-    <h3>Reporte de control de pruebas</h3>
-    <div id="Tables">
+    <h3>Reporte de control de pruebas</h3><br>
+    <hr>
+    <div class="table-box">
+    <div class="row">
+        <div class="column">
+            <h3>Pruebas recientemente registradas</h2>
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <th>Fecha de prueba</th>
+              <th>Resultado</th>
+            </tr>
+            <tr>
+              <td>Fernando Torres Jimenez</td>
+              <td>20/10/2021</td>
+              <td>Negativo</td>
+            </tr>
+            <tr>
+              <td>Emiliano Gomez Rocha</td>
+              <td>19/10/2021</td>
+              <td>Negativo</td>
+            </tr>
+            <tr>
+              <td>Ruben Pulido Rodriguez</td>
+              <td>15/10/2021</td>
+              <td>Negativo</td>
+            </tr>
+            <tr>
+                <td>Ericka Martinez Quintanilla</td>
+                <td>15/10/2021</td>
+                <td>Negativo</td>
+            </tr>
+            <tr>
+                <td>Jimena Davilia Mendez</td>
+                <td>11/10/2021</td>
+                <td>Positivo</td>
+              </tr>
+          </table>
+        </div>
+        <div class="column">
+            <h3>Empleados con purebas pendientes</h2>
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <th>Fecha de ultima prueba</th>
+            </tr>
+            <tr>
+              <td>Carlos Perez Lopez</td>
+              <td>10/10/2021</td>
+            </tr>
+            <tr>
+              <td>Mario Ochoa Elizondo</td>
+              <td>08/10/2021</td>
+            </tr>
+            <tr>
+              <td>Valeria Campos Martinez</td>
+              <td>08/10/2021</td>
+            </tr>
+          </table>
+          <br>
+          <button class="notify-button" onclick="SendAlert()" type="button">Enviar recordatorio</button>
+        </div>
+      </div>
 
     </div>
+    </div>
+
+    <script>
+        function SendAlert(){
+            confirm("Confirmar envio de recordatorios.");
+        }
+    </script>
+
 </body>
 </htmL>
