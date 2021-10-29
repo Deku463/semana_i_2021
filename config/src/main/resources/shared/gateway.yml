@@ -40,6 +40,12 @@ zuul:
         serviceId: notification-service
         stripPrefix: false
         sensitiveHeaders:
+    
+    hello-service:
+        path: /hello/**
+        serviceId: hello-service
+        stripPrefix: false
+        sensitiveHeaders:
 
 server:
   port: 4000
