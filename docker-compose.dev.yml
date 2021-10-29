@@ -60,14 +60,3 @@ services:
 
   turbine-stream-service:
     build: turbine-stream-service
-
-  hello-service:
-    build: hello-service
-    environment:
-      CONFIG_SERVICE_PASSWORD: $CONFIG_SERVICE_PASSWORD
-      ACCOUNT_SERVICE_PASSWORD: $ACCOUNT_SERVICE_PASSWORD
-    depends_on:
-      config:
-        condition: service_healthy
-    ports:
-      - 2000:2000
