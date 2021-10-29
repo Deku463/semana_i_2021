@@ -27,7 +27,8 @@
             <input class="employee-frontforms" id="testfile" name="testfile" type="file"/>
             </div>
             <div class="input-field" id="side3">
-                <input class="employee-frontforms" id="testfile" name="testfile" type="text" placeholder="Personas con quienes tuvo contacto..."/>
+                <input class="employee-frontforms" id="other" name="other" type="text" placeholder="Personas con quienes tuvo contacto..."/>
+                <button class="add-button" onclick="CleanName()" type="button">Añadir</button><br>
             </div>
             <button class="send-button" type="submit" name="registration">Enviar</button>
         </form>
@@ -47,12 +48,18 @@
                     $('#side3').hide();   
                 }
             });
+
         });
 
         $('#test').submit(function(e) {
             e.preventDefault();
             window.location.replace("success.html");
         });
+
+        function CleanName() {  
+            document.getElementById('other').value = "";
+        }
+
     </script>
 </body>
 </htmL>

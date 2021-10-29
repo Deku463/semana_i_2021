@@ -107,3 +107,16 @@
 #side3{
     display: none;
 }
+
+.add-button{
+    width: 10%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: auto 45%;
+    background-color: rgb(31, 173, 238);
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+}
